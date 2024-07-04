@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Glider</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="signo-de-dolar2.png">
+  <!-- font links -->
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,700,800,900&display=swap" rel="stylesheet"> 
+  <link href="https://api.fontshare.com/v2/css?f[]=bonny@600&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600&display=swap" rel="stylesheet"> 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let originalTitle = document.title;
+        let newTitle = "******";
+        window.addEventListener("focus", function() {
+            document.title = originalTitle;
+        });
+        window.addEventListener("blur", function() {
+          document.title = newTitle;
+        });
+    });
+</script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

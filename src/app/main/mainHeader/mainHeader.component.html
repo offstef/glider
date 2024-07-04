@@ -1,0 +1,23 @@
+<div class="cabecero">
+  <div class="presupuesto">
+      <div class="presupuesto_titulo">Dinero Disponible:</div>
+
+      <div class="presupuesto_valor">{{totalBudget | currency:'EUR': '€': '1.0-2'}}</div>
+
+      <div class="presupuesto_ingreso limpiarEstilos">
+          <div class="presupuesto_ingreso--texto">Ingresos</div>
+          <div class="right">
+              <div class="presupuesto_ingreso--valor">{{totalIncome | currency:'EUR': '€': '1.0-2'}}</div>
+              <div class="presupuesto_ingreso--porcentaje">&nbsp;</div>
+          </div>
+      </div>
+
+      <div class="presupuesto_egreso limpiarEstilos">
+          <div class="presupuesto_egreso--text">Gastos</div>
+          <div class="right limpiarEstilos">
+              <div class="presupuesto_egreso--valor"> -{{totalExpense | currency:'EUR': '€': '1.0-2'}}</div>
+              <div class="presupuesto_egreso--porcentaje">{{totalPercentage | percent}}</div>
+          </div>
+      </div>
+  </div>
+</div>

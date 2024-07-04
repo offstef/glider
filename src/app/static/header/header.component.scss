@@ -1,0 +1,44 @@
+@import "../../variables.scss";
+
+.title{
+    font-size: 6em;
+    font-family: $titleFont;
+    font-weight: 500;
+}
+.navbar{
+    background-color: $bgHeader;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.nav-item{
+    font-size: 2.5em;
+    font-family: $headerLink;
+    padding-left: 50px;
+    position: relative;
+}
+a:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+.form-control {
+    font-size: 1.2em;
+}
+.nav-item a {
+    opacity: 0.7;
+}
+
+.nav-item.dropdown {
+    position: relative;
+}
+
+.nav-item.dropdown .dropdown-menu {
+    z-index: 2;
+    position: absolute;
+    opacity: 1;
+}
+.dropdown-menu .dropdown-item:hover{
+    text-transform: uppercase;
+}
