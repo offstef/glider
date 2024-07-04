@@ -7,7 +7,7 @@ import { Expense } from '../expense/expense.model';
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  styleUrls: ['../main.component.scss']
 })
 export class FormComponent implements OnInit {
 

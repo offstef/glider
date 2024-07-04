@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 @Component({
   selector: 'app-mainHeader',
   templateUrl: './mainHeader.component.html',
-  styleUrls: ['./mainHeader.component.scss']
+  styleUrls: ['../main.component.scss']
 })
 export class MainHeaderComponent implements OnInit {
 

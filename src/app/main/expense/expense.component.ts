@@ -5,7 +5,7 @@ import { ExpenseService } from './expense.service';
 @Component({
   selector: 'app-expense',
   templateUrl: './expense.component.html',
-  styleUrls: ['./expense.component.scss']
+  styleUrls: ['../main.component.scss']
 })
 export class ExpenseComponent implements OnInit {
 
