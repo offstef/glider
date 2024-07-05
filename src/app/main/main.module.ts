@@ -8,11 +8,14 @@ import { ExpenseService } from './expense/expense.service';
 import { MainHeaderComponent } from './mainHeader/mainHeader.component';
 import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
+import { DataService } from '../data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   declarations: [
     MainComponent,
@@ -23,7 +26,8 @@ import { FormsModule } from '@angular/forms';
   ],
   providers: [
     IncomeService,
-    ExpenseService
+    ExpenseService,
+    DataService
   ],
   exports: [
     MainComponent,
