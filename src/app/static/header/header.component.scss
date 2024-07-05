@@ -1,44 +1,63 @@
 @import "../../variables.scss";
 
-.title{
-    font-size: 6em;
-    font-family: $titleFont;
-    font-weight: 500;
+.navbar {
+  transition: top 0.3s;
 }
-.navbar{
-    background-color: $bgHeader;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    z-index: 1;
+
+.hidden {
+  top: -100px;
 }
-.nav-item{
-    font-size: 2.5em;
-    font-family: $headerLink;
-    padding-left: 50px;
-    position: relative;
+
+.title {
+  font-size: 6em;
+  font-family: $titleFont;
+  font-weight: 500;
 }
-a:hover{
-    cursor: pointer;
-    opacity: 1;
+
+.navbar {
+  background-color: $bgHeader;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
 }
-.form-control {
-    font-size: 1.2em;
+
+.nav-item {
+  font-size: 2.5em;
+  font-family: $headerLink;
+  font-weight: 600;
+  padding-left: 50px;
+  position: relative;
 }
+
 .nav-item a {
-    opacity: 0.7;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.nav-item a:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 
 .nav-item.dropdown {
-    position: relative;
+  position: relative;
 }
 
 .nav-item.dropdown .dropdown-menu {
-    z-index: 2;
-    position: absolute;
-    opacity: 1;
+  z-index: 1000;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-.dropdown-menu .dropdown-item:hover{
-    text-transform: uppercase;
+
+.nav-item.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu .dropdown-item {
+  text-transform: uppercase;
 }

@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-light">
+<nav class="navbar navbar-expand-sm navbar-light fixed-top" [class.hidden]="isHeaderHidden">
   <div class="container">
     <div class="title">
       <a class="nav-link active" [routerLink]="['']" aria-current="page">{{ title }}</a>
@@ -11,26 +11,12 @@
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['/graficas']">Gráficas</a>
         </li>
-        <!-- Menú de perfil -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="perfilDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Perfil</a>
-        <div class="dropdown-menu" aria-labelledby="perfilDropdown">
-          <a class="dropdown-item" [routerLink]="['/crear-perfil']">Crear Perfil</a>
-          <a class="dropdown-item" [routerLink]="['/perfiles']">Perfiles</a>
-          <a class="dropdown-item" [routerLink]="['/borrar-perfil']">Borrar Perfil</a>
-        </div>
-      </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/perfiles']">Perfiles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/graficas']">Recursos</a>
+        </li>
       </ul>
-      <!-- barra de busqueda -->
-      <form class="d-flex my-2 my-lg-0">
-        <input
-          class="form-control me-sm-2"
-          type="text"
-          placeholder="Porno de enanos saltarines"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Buscar
-        </button>
-      </form>
     </div>
 </nav>

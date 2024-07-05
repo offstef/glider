@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { StartGraphComponent } from './start-graph/start-graph.component';
 import { RouterModule } from '@angular/router';
 import { routes } from '../app.routes';
+import { ProfileComponent } from './profile.component';
 
 @NgModule({
   imports: [
@@ -10,10 +10,10 @@ import { routes } from '../app.routes';
     RouterModule.forChild(routes),
   ],
   declarations: [
-    StartGraphComponent,
+    ProfileComponent
   ],
   exports: [
-    StartGraphComponent
+    ProfileComponent
   ],
 })
 export class GraphModule { }
