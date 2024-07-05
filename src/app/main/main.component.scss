@@ -1,3 +1,9 @@
+@import "../variables.scss";
+
+*{
+    font-family: $headerLink;
+}
+
 .limpiarEstilos::after {
     content: "";
     display: table;
@@ -8,7 +14,7 @@
 .redfocus:focus { border: 1px solid #FF5049 !important; }
 
 .cabecero {
-    height: 40vh;
+    height: 50vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -16,9 +22,9 @@
     padding-top: 150px;
     padding-bottom: 100px;
     color: #fff;
-    background: #7b4397;
-    background: -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-    background: linear-gradient(to left, #7b4397, #dc2430)
+    background: #3E5151;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #DECBA4, #3E5151); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .presupuesto {
@@ -31,14 +37,14 @@
 }
 
 .presupuesto_titulo{
-    font-size: 18px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 10px;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 .presupuesto_valor {
-    font-weight: 300;
+    font-weight: 600;
     font-size: 46px;
     text-align: center;
     margin-bottom: 25px;
@@ -48,23 +54,30 @@
 .presupuesto_ingreso,
 .presupuesto_egreso {
     padding: 12px;
+    padding-left: 20px;
     text-transform: uppercase;
+    border-radius: 20px;
 }
 
 .presupuesto_ingreso {
     margin-bottom: 10px;
-    background-color: #28B9B5;
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .presupuesto_egreso {
-    background-color: #FF5049;
+    background: #e53935;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e35d5b, #e53935);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e35d5b, #e53935); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .presupuesto_ingreso--texto,
 .presupuesto_egreso--text {
     float: left;
     font-size: 13px;
-    color: #444;
+    color: #d4d4d4;
     margin-top: 2px;
 }
 
@@ -175,8 +188,8 @@ h2 {
     margin-bottom: 15px;
 }
 
-.ingreso_titulo { color: #28B9B5; }
-.egreso_titulo { color: #FF5049; }
+.ingreso_titulo {  color: #4e54c8; }
+.egreso_titulo { color: #e53935; }
 
 .elemento {
     padding: 13px;
